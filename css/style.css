@@ -20,7 +20,21 @@ h1{
 	float: left;
 	width: 98.5%;
 	background-color: blue;
+	animation-duration: 3s;
+  	animation-name: logo;
 }
+@keyframes logo {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 #menu ul li{
 	padding: 0 20px;
 	color: white;
@@ -86,6 +100,15 @@ h1{
 
 }
 
+@keyframes pulsacion{
+	0%{
+		background-color: #FE642E;
+	}
+	100%{
+		background-color: #001F3F;
+	}
+}
+
 .izquierdo .cuadro{
 	margin-top: 10px;
 	margin-left: 30px;
@@ -95,7 +118,7 @@ h1{
 	padding-bottom: 40px;
 	
 	background-color: #FE642E;
-
+	animation: pulsacion 5s infinite;
 }
 .izquierdo .cuadro h3{
 	color: white;
